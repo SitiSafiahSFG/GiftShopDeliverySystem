@@ -24,7 +24,17 @@ Gift Shop Application
 
 - List of URL end points middleware RESTful/SOAP/Socket  
 
- 
+  REST API Endpoint:
+
+  URL: http://localhost/customer/giftShop.php
+  Purpose: Customer information, item quantities, total cost, and total number of items are sent via HTTP POST 
+           from this endpoint to a local PHP script (giftShop.php).
+
+Socket Endpoint:
+
+  IP Address: 10.200.104.108
+  Port: 9090
+  Purpose: To send order details to a delivery system using bidirectional communication over TCP/IP
 
 - Functions/Features in the middleware 
   
