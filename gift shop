@@ -22,3 +22,38 @@ Gift Shop Application
 - Architecture/Layer diagram for each of the apps including the middleware 
 ![Image Alt](https://github.com/SitiSafiahSFG/SitiSafiahSFG/blob/b18ff50d64e54ca0d68559964a9eeac4cd04bf00/design.jpg)
 
+- List of URL end points middleware RESTful/SOAP/Socket  
+
+ 
+
+- Functions/Features in the middleware 
+  
+  RESTful API (HTTP):
+
+  Function: 
+  Key Operations:
+
+  Socket (for Database Connection):
+
+  Function: 
+  Key Operations:
+
+  Database Connectivity (JDBC):
+
+  Function: 
+  Key Operations:
+
+- The database and tables involve in the projects 
+
+Database name : giftshop 
+
+ Table name : orders 
+
+ Attributes : 1. customer_name (customer name) 
+              2. customer_email (customer email) 
+              3. bear_qty (flower bear bouquet quantity) 
+              4. choc_basket_quantity (chocolate basket quantity)
+              5. choc_bouquet_quantity (chocolate bouquet quantity) 
+              6. flower_qty (flower bouquet quantity)  
+              7. total_item (total item purchase) 
+              8. total_cost (total price)
