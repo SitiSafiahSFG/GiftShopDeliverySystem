@@ -20,5 +20,5 @@ Gift Shop Application
   To handle the corresponding actions of the "CLEAR" and "CLOSE" buttons, an ActionListener is attached to them. 
 
 - Architecture/Layer diagram for each of the apps including the middleware 
-![Image Alt](image_url)
+![Image Alt](https://github.com/SitiSafiahSFG/SitiSafiahSFG/blob/b18ff50d64e54ca0d68559964a9eeac4cd04bf00/design.jpg)
 
