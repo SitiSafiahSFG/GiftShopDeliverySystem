@@ -30,18 +30,24 @@ Gift Shop Application
   
   RESTful API (HTTP):
 
-  Function: 
-  Key Operations:
+  Function: Connect with RESTful API endpoint to send the order details.
+  Key Operations: POST Request (creates POST parameters that have order quantity and customer information)
+                  HTTP Connection (makes a connection over HTTP to transfer data to the API endpoint)
+                  Response Handling (controls HTTP response codes and shows success or failure messages)
 
-  Socket (for Database Connection):
+  Socket (for Database Connection):delivery server is listening on port 9090 to connect to the delivery server
 
-  Function: 
-  Key Operations:
+  Function: Communicate with a delivery server to send order details from the client (customer system) to the server (delivery system).
+  Key Operations: Socket Creation (listening on port 9090 to connect to the delivery server)
+                  Data Transmission (converts order details into UTF-encoded strings using a DataOutputStream)
+                  Real-time Communication (immediate data transfer between the server (delivery system) and client (customer system))
 
   Database Connectivity (JDBC):
 
-  Function: 
-  Key Operations:
+  Function: Retrieves order data by interacting with the giftshop MySQL database.
+  Key Operations: JDBC Setup (connects to a MySQL database using Connector/J library)
+                  SQL Query Execution (makes a Statement object and runs a SQL SELECT query)
+                  Data Processing (retrieves and processes order data by looping over the ResultSet)
 
 - The database and tables involve in the projects 
 
