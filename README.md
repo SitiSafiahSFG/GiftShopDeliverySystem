@@ -22,3 +22,58 @@ Gift Shop Application
 - Architecture/Layer diagram for each of the apps including the middleware 
 
 ![WhatsApp Image 2024-07-11 at 10 06 15 PM](https://github.com/SitiSafiahSFG/GiftShopDeliverySystem/assets/149215963/73bbe146-8099-4783-9738-8961f1daa0f8)
+
+- List of URL end points middleware RESTful/SOAP/Socket  
+
+  REST API Endpoint:
+
+  URL: http://localhost/customer/giftShop.php
+  Purpose: Customer information, item quantities, total cost, and total number of items are sent via HTTP POST 
+           from this endpoint to a local PHP script (giftShop.php).
+
+Socket Endpoint:
+
+  IP Address: 10.200.104.108
+  Port: 9090
+  Purpose: To send order details to a delivery system using bidirectional communication over TCP/IP
+
+- Functions/Features in the middleware 
+  
+  RESTful API (HTTP):
+
+  Function: Connect with RESTful API endpoint to send the order details.
+  Key Operations: POST Request (creates POST parameters that have order quantity and customer information)
+                  HTTP Connection (makes a connection over HTTP to transfer data to the API endpoint)
+                  Response Handling (controls HTTP response codes and shows success or failure messages)
+
+  Socket (for Database Connection):
+
+  Function: Communicate with a delivery server to send order details from the client (customer system) to the server (delivery system).
+  Key Operations: Socket Creation (listening on port 9090 to connect to the delivery server)
+                  Data Transmission (converts order details into UTF-encoded strings using a DataOutputStream)
+                  Real-time Communication (immediate data transfer between the server (delivery system) and client (customer system))
+
+  Database Connectivity (JDBC):
+
+  Function: Retrieves order data by interacting with the giftshop MySQL database.
+  Key Operations: JDBC Setup (connects to a MySQL database using Connector/J library)
+                  SQL Query Execution (makes a Statement object and runs a SQL SELECT query)
+                  Data Processing (retrieves and processes order data by looping over the ResultSet)
+
+- The database and tables involve in the projects 
+
+Database name : giftshop 
+
+ Table name : orders 
+
+ Attributes : 1. customer_name (customer name) 
+              2. customer_email (customer email) 
+              3. bear_qty (flower bear bouquet quantity) 
+              4. choc_basket_quantity (chocolate basket quantity)
+              5. choc_bouquet_quantity (chocolate bouquet quantity) 
+              6. flower_qty (flower bouquet quantity)  
+              7. total_item (total item purchase) 
+              8. total_cost (total price)
+
+![Uploading dddddddddddddddddd.jpg…]()
+
