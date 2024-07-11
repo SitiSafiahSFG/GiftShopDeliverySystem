@@ -77,7 +77,6 @@ Database name : giftshop
 
 ![dddddddddddddddddd](https://github.com/SitiSafiahSFG/GiftShopDeliverySystem/assets/149215963/8882133f-695e-42c5-b6c2-3270f3e773c9)
 
-![Uploading dddddddddddddddddd.jpg…]()
 
 
 
