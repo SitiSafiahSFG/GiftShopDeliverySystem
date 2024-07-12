@@ -71,7 +71,7 @@ public class customer {
                                 "\ttotal cost=RM" + totalCost + "\ttotal items=" + totalItems;
 
                 // Sending the data through a TCP socket for efficient order processing 
-                Socket skt = new Socket("10.200.98.132", 9090);  // Connect to server 10.200.110.206   10.200.76.180
+                Socket skt = new Socket("10.200.104.108", 9090);  // Connect to server 10.200.104.108
                 DataOutputStream out = new DataOutputStream(skt.getOutputStream());
                 out.writeUTF(params);
                 // Send data to server
@@ -268,7 +268,8 @@ public class customer {
         }
         comboBoxFlower.setBounds(764, 407, 65, 25);
         frame.getContentPane().add(comboBoxFlower);
-
+        
+	//RESTFul web service, where the program constructs an HTTP POST request to send order details to a PHP script. 
         JButton btnCheckout = new JButton("Check Out");
         btnCheckout.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -276,7 +277,7 @@ public class customer {
                 String name = textField.getText().trim();
                 String email = textField_1.getText().trim();
 
-                // Validate name, error handling during database operations
+                // Validate name, error handling during database operations. Validation is performed to ensure correct customer input
                 if (name.isEmpty()) {
                     JOptionPane.showMessageDialog(frame, "Name field cannot be empty.", "Error", JOptionPane.ERROR_MESSAGE);
                     return;
@@ -376,6 +377,7 @@ public class customer {
 	                        "\ttotal cost=RM" + totalCost + "\ttotal items=" + totalItems;
 
 	        try {
+		    // The application sends order details to a server using TCP socket communication.
 	            Socket socket = new Socket("localhost", 9090);  // Connect to delivery server 9090
 	            DataOutputStream out = new DataOutputStream(socket.getOutputStream());
 	            out.writeUTF(params);
