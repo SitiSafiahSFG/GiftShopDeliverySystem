@@ -81,8 +81,7 @@ Database name : giftshop
   https://utemedu.sharepoint.com/sites/GROUP18_DAD/_layouts/15/stream.aspx?id=%2Fsites%2FGROUP18%5FDAD%2FShared%20Documents%2FGeneral%2FRecordings%2FDAD%20Project%2D20240713%5F013951%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ed83cb940%2D0698%2D4c53%2Da6d2%2D11be9ad1a503
 
 - Canva slide presentation
-  https://www.canva.com/design/DAGKwENgH4Y/yPx1kEe4NUVws-_LIZBUTA/edit
-
+  https://www.canva.com/design/DAGKwENgH4Y/yPx1kEe4NUVws-_LIZBUTA/edit?utm_content=DAGKwENgH4Y&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 
 
